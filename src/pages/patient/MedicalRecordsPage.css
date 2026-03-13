@@ -1,0 +1,68 @@
+.medical-records {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.medical-records-header h1 {
+  font-size: 1.875rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.medical-records-header p {
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.25rem;
+}
+
+.medical-records-empty {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.medical-records-empty-icon {
+  width: 3rem;
+  height: 3rem;
+  color: hsl(var(--muted-foreground));
+  margin: 0 auto 0.75rem;
+}
+
+.medical-records-empty p {
+  color: hsl(var(--muted-foreground));
+}
+
+.medical-records-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.medical-record-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.medical-record-date {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.medical-record-section {
+  margin-top: 0.5rem;
+}
+
+.medical-record-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+}
+
+.medical-record-value {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}

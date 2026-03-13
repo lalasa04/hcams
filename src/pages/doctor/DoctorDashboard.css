@@ -1,0 +1,115 @@
+.doctor-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.doctor-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.doctor-dashboard-header h1 {
+  font-size: 1.875rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.doctor-dashboard-header p {
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.25rem;
+}
+
+.doctor-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .doctor-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .doctor-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.doctor-stat-card {
+  background: hsl(var(--card));
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.doctor-stat-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-stat-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doctor-stat-label {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.doctor-stat-value {
+  font-size: 1.875rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-top: 0.25rem;
+}
+
+.doctor-stat-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.doctor-appointment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: hsl(var(--muted) / 0.5);
+}
+
+.doctor-appointment-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.doctor-appointment-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: hsl(var(--primary) / 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

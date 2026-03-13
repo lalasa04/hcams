@@ -1,0 +1,39 @@
+.schedule-appointment {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.schedule-appointment-header h1 {
+  font-size: 1.875rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.schedule-appointment-header p {
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.25rem;
+}
+
+.schedule-appointment-card {
+  max-width: 42rem;
+}
+
+.schedule-appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.schedule-appointment-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.schedule-appointment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
